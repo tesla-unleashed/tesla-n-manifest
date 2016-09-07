@@ -125,7 +125,7 @@
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="github" revision="staging/cm-14.0" />
   <project path="packages/providers/ContactsProvider" name="CyanogenMod/android_packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="staging/cm-14.0" />
   <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="staging/cm-14.0" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" /> 
+  <project path="system/bt" name="CyanogenMod/android_system_bt" groups="pdk" remote="github" revision="staging/cm-14.0" /> 
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" remote="github" revision="staging/cm-14.0" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" remote="github" revision="staging/cm-14.0" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" remote="github" revision="staging/cm-14.0" />
