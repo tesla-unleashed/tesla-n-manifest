@@ -30,9 +30,6 @@
 
   <!-- Tesla Repo's -->
   <project path="manifest" name="manifest" remote="tesla" revision="n7.0-caf" />
-  <project path="build" name="build" groups="pdk,tradefed" remote="tesla" revision="n7.0-caf" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="art" name="art" groups="pdk" remote="tesla" />
   <project path="bionic" name="bionic" groups="pdk" remote="tesla" revision="n7.0-caf" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tesla" />
@@ -76,7 +73,6 @@
   <project path="external/ant-wireless/antradio-library" name="CyanogenMod/android_external_ant-wireless_antradio-library" remote="github" revision="staging/cm-14.0" />
 
   <!-- Telephony -->
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="tesla" revision="n7.0-caf" />
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="tesla" revision="n7.0-caf" />
   <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" groups="pdk-fs" remote="tesla" revision="n7.0-caf" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-fs" remote="tesla" revision="n7.0-caf" />
@@ -119,7 +115,6 @@
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" groups="pdk" remote="github" revision="staging/cm-14.0" />   
   <project path="hardware/libhardware_legacy" name="AOSP-JF-MM/platform_hardware_libhardware_legacy" groups="pdk" remote="github" revision="aosp-7.0-test" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="github" revision="staging/cm-14.0" />
-  <project path="packages/apps/CarrierConfig" name="CyanogenMod/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="staging/cm-14.0" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" groups="pdk-fs" remote="github" revision="staging/cm-14.0" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="github" revision="staging/cm-14.0" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" remote="github" revision="staging/cm-14.0" />
@@ -552,5 +547,9 @@
 
   <!-- My stuff -->
   <project name="local_manifest" path=".repo/local_manifests" remote="manifest" revision="tesla-n" />
-
+  <project path="build" name="tesla-unleashed/build" groups="pdk,tradefed" remote="github" revision="n7.0-caf" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.0-caf" />
+  <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="staging/cm-14.0" />
 </manifest>
