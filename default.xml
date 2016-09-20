@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="manifest"
-           fetch="/media/osboxes/fa7dd3e7-f161-4089-8c65-39d94ce9a2e6/n-repos/tesla/m" />
+           fetch="file:///media/osboxes/fa7dd3e7-f161-4089-8c65-39d94ce9a2e6/m-repos" />
 
   <remote name="tipsy-unleashed"
           fetch="https://github.com/tipsy-unleashed/" />
