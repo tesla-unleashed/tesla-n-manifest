@@ -32,7 +32,7 @@
            sync-j="4" />
 
   <!-- Tesla Repo's -->
-  <project path="manifest" name="manifest" remote="tesla" revision="n7.0-caf" />
+  <project path="manifest" name="tesla-n-manifest" remote="tesla-unleashed" revision="n7.0-caf" />
   <project path="art" name="art" groups="pdk" remote="tesla"  />
   <project path="bionic" name="bionic" groups="pdk" remote="tesla" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tesla" />
