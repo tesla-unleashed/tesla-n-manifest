@@ -33,7 +33,6 @@
 
   <!-- Tesla Repo's -->
   <project path="manifest" name="tesla-n-manifest" remote="tesla-unleashed" revision="n7.0" />
-  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="tesla" revision="n7.0" />  
   <project path="art" name="art" groups="pdk" remote="tesla"  />
   <project path="bionic" name="bionic" groups="pdk" remote="tesla" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tesla" />
