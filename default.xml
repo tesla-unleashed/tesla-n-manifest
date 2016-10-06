@@ -587,4 +587,8 @@
   <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.0" />
   <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.0" />
   <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
+
+  <!-- Kernel Adiutor -->
+  <project path="packages/apps/KernelAdiutor" name="KernelAdiutor" remote="tesla" />
+  <project path="packages/apps/FloatingActionButton" name="FloatingActionButton" remote="tesla" />  
 </manifest>
