@@ -116,20 +116,20 @@
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="tesla" />
   <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="tesla" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="tesla" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="tesla" revision="n7.0" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="tesla" />
   <project path="system/bt" name="system_bt" groups="pdk" remote="tesla" />
   <project path="system/core" name="system_core" groups="pdk" remote="tesla" />
-  <project path="system/extras" name="system_extras" groups="pdk" remote="tesla" revision="n7.0" />
-  <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="tesla" revision="n7.0" />
-  <project path="system/media" name="system_media" groups="pdk" remote="tesla" revision="n7.0" />
-  <project path="system/netd" name="system_netd" groups="pdk" remote="tesla" revision="n7.0" />
-  <project path="system/qcom" name="system_qcom" groups="qcom" remote="tesla" revision="n7.0" />
+  <project path="system/extras" name="system_extras" groups="pdk" remote="tesla" />
+  <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="tesla" />
+  <project path="system/media" name="system_media" groups="pdk" remote="tesla" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="tesla" />
+  <project path="system/qcom" name="system_qcom" groups="qcom" remote="tesla" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="tesla" />
-  <project path="system/vold" name="system_vold" groups="pdk" remote="tesla" revision="n7.0" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="tesla" />
   <project path="vendor/qcom/opensource/bluetooth" name="packages_apps_BluetoothExt" remote="tesla" />
-  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="tesla" revision="n7.0" />
-  <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="tesla" revision="n7.0" />
-  <project path="vendor/qcom/opensource/time-services" name="vendor_qcom_opensource_time-services" remote="tesla" revision="n7.0" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="tesla" />
+  <project path="vendor/qcom/opensource/dpm" name="vendor_qcom_opensource_dpm" remote="tesla" />
+  <project path="vendor/qcom/opensource/time-services" name="vendor_qcom_opensource_time-services" remote="tesla" />
   <project path="vendor/tesla" name="vendor_tesla" remote="tesla" />
 
   <!-- LockClock -->
@@ -172,7 +172,6 @@
   <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="tesla" revision="n7.0" />
   <project path="hardware/qcom/audio-caf/msm8960" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="tesla" revision="n7.0-caf-8960" />
   <project path="hardware/qcom/audio-caf/msm8974" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="tesla" revision="n7.0-caf-8974" />
-  <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom" remote="tesla" revision="n7.0" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom" remote="tesla" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt" groups="qcom" remote="tesla" revision="n7.0-caf" />
   <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" groups="pdk" remote="tesla" revision="n7.0" />
@@ -180,7 +179,7 @@
   <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0" />
   <project path="hardware/qcom/display-caf/msm8960" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8974" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8974" />
-  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom" remote="tesla" revision="n7.0" />
+  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom" remote="tesla"/>
   <project path="hardware/qcom/media-caf/msm8960" name="hardware_qcom_media" groups="qcom" remote="tesla" revision="n7.0-caf-8960" />
   <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media" groups="qcom" remote="tesla" revision="n7.0-caf-8974" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" groups="qcom,qcom_gps" remote="tesla" />
@@ -605,8 +604,6 @@
   <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.1" />
   <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.1" />
   <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="DespairFactor/arm-eabi-4.9" remote="bb" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="BB/Custom_Toolchains" groups="pdk,linux,arm" remote="github" revision="arm-eabi-4.9-Linaro-generic" />-->
 
   <!-- Kernel Adiutor -->
   <project path="packages/apps/KernelAdiutor" name="KernelAdiutor" remote="tesla" />
