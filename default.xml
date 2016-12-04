@@ -145,7 +145,7 @@
   </project>
   
   <!-- OMS -->
-  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="master" />
+  <project path="packages/apps/masquerade" name="TeamSubstratum/masquerade" remote="github" revision="n" />
 
   <!-- Telephony -->
   <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-fs" remote="tesla" />
