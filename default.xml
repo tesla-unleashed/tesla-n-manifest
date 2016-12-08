@@ -612,11 +612,11 @@
 
   <!-- My stuff -->
   <project name="local_manifest" path=".repo/local_manifests" remote="manifest" revision="tesla-n" />
-  <project path="build" name="tesla-unleashed/build" groups="pdk,tradefed" remote="github" revision="n7.1" >
+  <project path="build" name="tesla-unleashed/build" groups="pdk,tradefed" remote="github" revision="n7.1.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.1" />
-  <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.1" />
+  <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.1.1" />
+  <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.1.1" />
   <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
 
   <!-- Kernel Adiutor -->
