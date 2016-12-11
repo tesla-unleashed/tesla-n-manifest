@@ -47,7 +47,7 @@
   <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
 
   <!-- Tesla Repo's -->
-  <project path="art" name="art" groups="pdk" remote="tesla"  />
+  <project path="art" name="art" groups="pdk" remote="tesla" />
   <project path="bionic" name="bionic" groups="pdk" remote="tesla" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tesla" />
   <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="tesla" />
