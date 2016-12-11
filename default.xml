@@ -24,6 +24,7 @@
 
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod"
+           sync-c="true"
            revision="cm-14.1" />
 
   <remote  name="tesla"
@@ -35,8 +36,17 @@
            sync-c="true"
            sync-j="4" />
 
+  <!-- My stuff -->
+  <project path="manifest" name="tesla-n-manifest" remote="tesla-unleashed" revision="n7.1.1" />
+  <project name="local_manifest" path=".repo/local_manifests" remote="manifest" revision="tesla-n" />
+  <project path="build" name="tesla-unleashed/build" groups="pdk,tradefed" remote="github" revision="n7.1.1" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.1.1" />
+  <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.1.1" />
+  <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
+
   <!-- Tesla Repo's -->
-  <project path="manifest" name="tesla-n-manifest" remote="tesla-unleashed" revision="n7.1" />
   <project path="art" name="art" groups="pdk" remote="tesla"  />
   <project path="bionic" name="bionic" groups="pdk" remote="tesla" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tesla" />
@@ -91,7 +101,7 @@
   <project path="external/zip" name="external_zip" remote="tesla" />
   <project path="external/zlib" name="external_zlib" groups="pdk" remote="tesla" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="tesla" />
-  <project path="frameworks/base" name="frameworks_base" remote="tesla" revision="n7.1" />
+  <project path="frameworks/base" name="frameworks_base" remote="tesla" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="tesla" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="tesla" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk" remote="tesla" />
@@ -174,18 +184,18 @@
 
   <!-- HardWare QCOM -->
   <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="tesla" />
-  <project path="hardware/qcom/audio-caf/msm8960" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="tesla" revision="n7.0-caf-8960" />
-  <project path="hardware/qcom/audio-caf/msm8974" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="tesla" revision="n7.0-caf-8974" />
+  <project path="hardware/qcom/audio-caf/msm8960" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" revision="cm-14.1-caf-8960" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" revision="cm-14.1-caf-8974" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom" remote="tesla" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt" groups="qcom" remote="tesla" revision="n7.0-caf" />
   <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" groups="pdk" remote="tesla" />
   <project path="hardware/qcom/camera" name="hardware_qcom_camera" groups="qcom" remote="tesla" />
   <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" />
-  <project path="hardware/qcom/display-caf/msm8960" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8960" />
-  <project path="hardware/qcom/display-caf/msm8974" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8974" />
+  <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="cm" revision="cm-14.1-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="cm" revision="cm-14.1-caf-8974" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom" remote="tesla"/>
-  <project path="hardware/qcom/media-caf/msm8960" name="hardware_qcom_media" groups="qcom" remote="tesla" revision="n7.0-caf-8960" />
-  <project path="hardware/qcom/media-caf/msm8974" name="hardware_qcom_media" groups="qcom" remote="tesla" revision="n7.0-caf-8974" />
+  <project path="hardware/qcom/media-caf/msm8960" name="android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-14.1-caf-8960" />
+  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-14.1-caf-8974" />
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" groups="qcom,qcom_gps" remote="tesla" />
   <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" groups="qcom,qcom_keymaster" remote="tesla" />
   <project path="hardware/qcom/fm" name="hardware_qcom_fm" groups="pdk" remote="tesla" />
@@ -610,16 +620,8 @@
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" groups="pdk,darwin,arm" remote="aosp" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="mdalexca/arm-eabi-4.9" remote="bb" revision="master" />
 
-  <!-- My stuff -->
-  <project name="local_manifest" path=".repo/local_manifests" remote="manifest" revision="tesla-n" />
-  <project path="build" name="tesla-unleashed/build" groups="pdk,tradefed" remote="github" revision="n7.1.1" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.1.1" />
-  <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.1.1" />
-  <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
-
   <!-- Kernel Adiutor -->
   <project path="packages/apps/KernelAdiutor" name="KernelAdiutor" remote="tesla" />
   <project path="packages/apps/FloatingActionButton" name="FloatingActionButton" remote="tesla" />  
+
 </manifest>
