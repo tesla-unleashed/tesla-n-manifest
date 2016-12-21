@@ -44,6 +44,7 @@
   </project>
   <project path="frameworks/opt/telephony" name="tesla-unleashed/frameworks_opt_telephony" groups="pdk" remote="github" revision="n7.1.1" />
   <project path="packages/apps/CarrierConfig" name="tesla-unleashed/android_packages_apps_CarrierConfig" groups="pdk-fs" remote="github" revision="n7.1.1" />
+  <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="tesla-unleashed" revision="n7.1.1" />
 
   <!-- Tesla Repo's -->
